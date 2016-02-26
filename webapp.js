@@ -1,3 +1,4 @@
+var putElem;
 window.addEventListener('load', function() {
 	document.getElementById('register').addEventListener('click', register, false);
 	document.getElementById('push').addEventListener('click', setPush , false);
@@ -29,7 +30,7 @@ function setSubscription(s) {
 		document.getElementById('register').disabled = true;
 		subscription = s;
 		console.log("Endpoint is:", subscription.endpoint);
-		var putElem = document.getElementById("endpoint");
+		putElem = document.getElementById("endpoint");
 		putElem.innerHTML = subscription.endpoint;
 		var p = document.getElementById('push');
 		p.textContent = 'プッシュ通知を解除する';
