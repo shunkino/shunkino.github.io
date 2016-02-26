@@ -1,0 +1,13 @@
+{
+	"name": "demoapp",
+	"short_name": "demo",
+		"icons": [{
+			"src": "piyo.jpg",
+			"sizes": "256x256",
+			"type": "image/png"
+		}],
+		"start_url": "localhost",
+		"display": "standalone",
+		"gcm_sender_id": "573615680292,"
+}
+
